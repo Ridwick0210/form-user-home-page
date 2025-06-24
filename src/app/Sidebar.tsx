@@ -10,8 +10,8 @@ import Searchbar from "./components/Searchbar";
 
 export default function Sidebar(){
     return (
-        <div className="bg-[#EBDED3] px-12 py-6 gap-8 h-screen">
-            <span className='py-4 flex justify-center gap-3'><Image src={mainicon} alt='icon' width={33} height={33}/>
+        <div className="bg-[#56A37D] px-12 py-6 gap-8 h-screen">
+            <span className='py-4 flex justify-start gap-3'><Image src={mainicon} alt='icon' width={33} height={33}/>
             
             <button className="w-auto text-left text-3xl my-3 font-bold">F.O.R.M</button></span>
 
@@ -22,7 +22,7 @@ export default function Sidebar(){
             </div>
             
             <div className="bg-[#D9D9D9] rounded-xl">
-                <button className="w-full text-[#FF6424] text-left my-6 text-3xl flex items-center gap-5 px-10 py-4 "> <CiCirclePlus size={32} className='font-medium'/>
+                <button className="w-full text-left my-6 text-3xl flex items-center gap-5 px-10 py-4 "> <CiCirclePlus size={32} className='font-medium'/>
                 New Label
                 </button>
             </div>
@@ -30,13 +30,13 @@ export default function Sidebar(){
             <hr/> 
             
             <div>
-                <button className="w-full text-left my-3 text-3xl font-medium flex gap-5 px-10 py-4"><TbShare3 size={30}/>
+                <button className="w-full font-normal text-left my-3 text-3xl font-medium flex gap-5 px-10 py-4"><TbShare3 size={30}/>
                 Shared with me 
                 </button>
             </div>
             
             <div>
-                <button className="w-full text-left my-3 text-3xl font-medium flex gap-5 px-10 py-4"> <GrDocument size={30}/>
+                <button className="w-full font-normal text-left my-3 text-3xl font-medium flex gap-5 px-10 py-4"> <GrDocument size={30}/>
                 Drafts
                 </button>
             </div>
@@ -44,14 +44,15 @@ export default function Sidebar(){
             <hr/>
             
             <div>
-                <button className="w-full text-left my-3 text-3xl font-medium flex gap-5 px-10 py-4"> <FaRegStar /> Starred
+                <button className="w-full font-normal text-left my-3 text-3xl font-medium flex gap-5 px-10 py-4"> <FaRegStar /> Starred
                 </button>
             </div>
 
             <div> 
-            <button className="w-full text-left my-3 text-3xl font-medium flex gap-5 px-10 py-4"> <LuTrash2 /> Trash
+            <button className="w-full font-normal text-left my-3 text-3xl font-medium flex gap-5 px-10 py-4"> <LuTrash2 /> Trash
                 </button>
             </div>
+            <hr/>
         </div>
     );
 }
